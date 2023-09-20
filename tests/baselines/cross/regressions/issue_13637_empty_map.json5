@@ -295,6 +295,7 @@
               group: null,
               propagate_hover: false,
               context_menu: null,
+              auto_ranging: "both",
               data_source: {
                 type: "object",
                 name: "ColumnDataSource",
@@ -547,6 +548,7 @@
               group: null,
               propagate_hover: false,
               context_menu: null,
+              auto_ranging: "both",
               data_source: {
                 type: "object",
                 name: "ColumnDataSource",
