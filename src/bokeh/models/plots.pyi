@@ -49,6 +49,7 @@ from .scales import Scale
 from .sources import ColumnarDataSource
 from .tiles import TileSource
 from .tools import HoverTool, Tool, Toolbar
+from .ui import KeyBinding
 
 GlyphType = TypeVar("GlyphType", bound=Glyph)
 
@@ -158,6 +159,8 @@ class Plot(LayoutDOM, BackgroundFill, BackgroundHatch, BorderFill, BorderHatch, 
     hold_render: bool = ...
 
     attribution: list[HTML | str] = ...
+
+    key_bindings: list[KeyBinding] = ...
 
     def select(self, *args: Any, **kwargs: Any) -> Sequence[Model]: ...
 
