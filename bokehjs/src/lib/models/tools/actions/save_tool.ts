@@ -52,6 +52,15 @@ export class SaveToolView extends ActionToolView {
       }
     }
   }
+
+  override key_bindings(): KeyBinding[] {
+    return [
+      ...super.key_bindings(),
+      {keys: ["S"], cmd: "save", action: () => this.doit("save")},
+      {keys: ["C"], cmd: "copy", action: () => this.doit("copy")},
+      {keys: ["O"], cmd: "open", action: () => this.doit("open")},
+    ]
+  }
 }
 
 export namespace SaveTool {
