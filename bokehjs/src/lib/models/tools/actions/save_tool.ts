@@ -1,6 +1,7 @@
 import {ActionTool, ActionToolView} from "./action_tool"
 import {MenuItem} from "../../ui/menus"
 import type {MenuItemLike} from "../../ui/menus"
+import type {KeyBinding} from "core/keyboard"
 import type * as p from "core/properties"
 import * as icons from "styles/icons.css"
 
